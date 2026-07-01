@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Section */
+.medicines{
+    width:100%;
+    padding:80px 8%;
+    background:#ffffff;
+}
+
+.med-container{
+    text-align:center;
+}
+
+/* Tag */
+.med-tag{
+    display:inline-block;
+    background:#d1fae5;
+    color:#0f766e;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:15px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* Heading */
+.med-container h2{
+    font-size:40px;
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.med-container p{
+    font-size:18px;
+    color:#555;
+    max-width:750px;
+    margin:0 auto 50px auto;
+    line-height:1.6;
+}
+
+/* Grid */
+.med-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+    gap:25px;
+}
+
+/* Card */
+.med-card{
+    background:#f9fafb;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+    text-align:center;
+    border:1px solid #e5e7eb;
+}
+
+.med-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    border-color:#0f766e;
+}
+
+/* Icon */
+.med-icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* Name */
+.med-card h3{
+    font-size:18px;
+    color:#0f766e;
+    margin-bottom:8px;
+}
+
+/* Type */
+.med-type{
+    display:inline-block;
+    background:#e0f2fe;
+    color:#0369a1;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+    margin-bottom:10px;
+}
+
+/* Price */
+.med-price{
+    font-size:20px;
+    font-weight:bold;
+    color:#0f172a;
+    margin:10px 0;
+}
+
+/* Button */
+.buy-btn{
+    background:#0f766e;
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.buy-btn:hover{
+    background:#115e59;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .medicines{
+        padding:60px 5%;
+    }
+
+    .med-container h2{
+        font-size:30px;
+    }
+
+    .med-container p{
+        font-size:16px;
+    }
+}

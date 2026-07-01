@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Section */
+.categories{
+    width:100%;
+    padding:80px 8%;
+    background:#f5f7fb;
+}
+
+.cat-container{
+    text-align:center;
+}
+
+/* Tag */
+.cat-tag{
+    display:inline-block;
+    background:#d1fae5;
+    color:#0f766e;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:15px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* Heading */
+.cat-container h2{
+    font-size:40px;
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.cat-container p{
+    font-size:18px;
+    color:#555;
+    max-width:750px;
+    margin:0 auto 50px auto;
+    line-height:1.6;
+}
+
+/* Grid */
+.cat-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:25px;
+}
+
+/* Card */
+.cat-card{
+    background:#ffffff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+    text-align:center;
+    border:1px solid #e5e7eb;
+    cursor:pointer;
+}
+
+.cat-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    border-color:#0f766e;
+}
+
+/* Icon */
+.cat-icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* Title */
+.cat-card h3{
+    font-size:18px;
+    color:#0f766e;
+    margin-bottom:8px;
+}
+
+/* Description */
+.cat-card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.5;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .categories{
+        padding:60px 5%;
+    }
+
+    .cat-container h2{
+        font-size:30px;
+    }
+
+    .cat-container p{
+        font-size:16px;
+    }
+}

@@ -1,138 +1,46 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
+body {
+  margin: 0;
+  font-family: Arial;
 }
 
-body{
-  background:#f1f5f9;
+/* Navbar */
+.navbar {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  background: #0b6e4f;
+  color: white;
+  padding: 15px 30px;
 }
 
-.navbar{
-  background:linear-gradient(
-    90deg,
-    #0f172a,
-    #1e3a8a
-  );
-  color:white;
-  padding:18px;
-  text-align:center;
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.navbar h1{
-  font-size:22px;
+.navbar ul li {
+  cursor: pointer;
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  list-style: none;
 }
 
-.navbar p{
-  font-size:13px;
-  margin-top:5px;
+/* Slider */
+.slider img {
+  width: 100%;
+  height: 400px;
+  list-style: none;
+  object-fit: cover;
 }
 
-.form-container{
-  width:95%;
-  margin:15px auto;
-  background:white;
-  padding:15px;
-  border-radius:15px;
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-}
-
-.form-container input,
-.form-container select{
-  width:100%;
-  padding:13px;
-  border:1px solid #cbd5e1;
-  border-radius:10px;
-}
-
-.form-container button{
-  width:100%;
-  padding:14px;
-  border:none;
-  border-radius:10px;
-  background:#2563eb;
-  color:white;
-  font-size:15px;
-  cursor:pointer;
-}
-
-.class-title{
-  width:95%;
-  margin:20px auto 10px;
-  background:white;
-  padding:12px;
-  border-left:5px solid #2563eb;
-  border-radius:10px;
-  font-size:16px;
-  color:#1e3a8a;
-}
-
-.student-container{
-  width:95%;
-  margin:auto;
-  display:flex;
-  flex-direction:column;
-  gap:15px;
-}
-
-.student-card{
-  background:white;
-  padding:18px;
-  border-radius:15px;
-  box-shadow:
-  0 5px 15px rgba(0,0,0,0.08);
-}
-
-.student-card h2{
-  color:#1e3a8a;
-  margin-bottom:10px;
-}
-
-.student-card p{
-  font-size:13px;
-  margin-bottom:7px;
-}
-
-.delete-btn{
-  width:100%;
-  margin-top:12px;
-  padding:12px;
-  border:none;
-  border-radius:10px;
-  background:#dc2626;
-  color:white;
-  cursor:pointer;
-}
-
-@media(min-width:768px){
-
-  .form-container{
-    display:grid;
-    grid-template-columns:
-    repeat(2,1fr);
-  }
-
-  .student-container{
-    display:grid;
-    grid-template-columns:
-    repeat(2,1fr);
-  }
-
-}
-
-@media(min-width:1024px){
-
-  .form-container{
-    grid-template-columns:
-    repeat(4,1fr);
-  }
-
-  .student-container{
-    grid-template-columns:
-    repeat(3,1fr);
-  }
-
+/* Home */
+.home {
+  text-align: center;
+  padding: 30px;
+  list-style: none;
 }

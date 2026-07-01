@@ -1,55 +1,28 @@
-import { useEffect, useState } from "react";
-
-import Navbar from "./components/Navbar";
-import StudentForm from "./components/StudentForm";
-import StudentList from "./components/StudentList";
-import VanReport from "./components/VanReport";
-
+import React from "react";
+import Navbar from "./Navbar.jsx";
+import Home from "./Home.jsx";
+import Slider from "./Slider.jsx";
+import Introduction from "./Introduction.jsx";
+import OurServices from "./OurServices.jsx";
 import "./App.css";
+import FeaturedMedicines from "./FeaturedMedicines.jsx";
+import Categories from "./Categories.jsx";
+import ChooseUs from "./ChooseUs.jsx";
+import Footer from "./Footer.jsx";
 
 function App() {
-
-  const [students, setStudents] = useState([]);
-
-  const fetchStudents = () => {
-
-    fetch("http://localhost:5000/students")
-
-      .then((res) => res.json())
-
-      .then((data) => {
-
-        setStudents(data);
-
-      });
-
-  };
-
-  useEffect(() => {
-
-    fetchStudents();
-
-  }, []);
-
   return (
-
     <div>
-
       <Navbar />
-
-      <StudentForm
-        fetchStudents={fetchStudents}
-      />
-
-      <VanReport
-        students={students}
-      />
-
-      <StudentList
-        students={students}
-        fetchStudents={fetchStudents}
-      />
-
+      <Slider />
+      <Home />
+      <Introduction/>
+      <OurServices/>
+      <FeaturedMedicines/>
+      <Categories/>
+      <ChooseUs/>
+      <Footer/>
+      
     </div>
   );
 }

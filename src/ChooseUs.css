@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Section */
+.choose{
+    width:100%;
+    padding:90px 8%;
+    background:linear-gradient(135deg,#e0f2fe,#f0f9ff);
+}
+
+/* Container */
+.choose-container{
+    text-align:center;
+}
+
+/* Tag */
+.choose-tag{
+    display:inline-block;
+    background:#0ea5e9;
+    color:white;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* Heading */
+.choose-container h2{
+    font-size:42px;
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.choose-container p{
+    font-size:18px;
+    color:#475569;
+    max-width:750px;
+    margin:0 auto 50px auto;
+    line-height:1.6;
+}
+
+/* Grid */
+.choose-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:25px;
+}
+
+/* Card (Glass Effect) */
+.choose-card{
+    background:rgba(255,255,255,0.7);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.4);
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.choose-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Icon */
+.choose-icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* Title */
+.choose-card h3{
+    font-size:18px;
+    color:#0284c7;
+    margin-bottom:8px;
+}
+
+/* Text */
+.choose-card p{
+    font-size:14px;
+    color:#475569;
+    line-height:1.5;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .choose-container h2{
+        font-size:30px;
+    }
+
+    .choose-container p{
+        font-size:16px;
+    }
+}
