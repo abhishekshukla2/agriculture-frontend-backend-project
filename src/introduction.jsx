@@ -1,6 +1,6 @@
 import "./Introduction.css";
 
-function Introduction() {
+export function Introduction() {
   return (
     <section className="intro">
       <div className="intro-container">
@@ -18,8 +18,13 @@ function Introduction() {
           </p>
 
           <div className="intro-buttons">
-            <button className="shop-btn"><a href="http://localhost:8000/shop">Shop</a></button>
-            <button className="learn-btn"><a href="#">Learn More</a></button>
+            <button className="shop-btn">
+              <a href="http://localhost:8000/shop">Shop</a>
+            </button>
+
+            <button className="learn-btn">
+              <a href="#">Learn More</a>
+            </button>
           </div>
 
           <div className="features">
@@ -51,5 +56,3 @@ function Introduction() {
     </section>
   );
 }
-
-export default Introduction;
