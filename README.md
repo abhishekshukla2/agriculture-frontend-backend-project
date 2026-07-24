@@ -1,4 +1,4 @@
-# Hospital Sh
+# Hospital 
 
 Hospital Shop is a web application built using React, Vite, Node.js and Express.
 
