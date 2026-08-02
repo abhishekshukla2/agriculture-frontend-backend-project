@@ -3,7 +3,7 @@
 Hospital Shop is a web application built using React, Vite, Node.js and Express.
 
 ## Features
-- Home Page
+- Home 
 - Medicine categories
 - Featured medicines
 - Services section
